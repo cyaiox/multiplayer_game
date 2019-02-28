@@ -9,4 +9,4 @@ RUN pip install -r requirements.txt
 
 ADD ./src/ .
 
-ENTRYPOINT hypercorn app:app --bind 0.0.0.0:5000
+ENTRYPOINT python app.py
